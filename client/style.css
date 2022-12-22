@@ -1,0 +1,244 @@
+html {
+    height:100%;
+    width: 100%;
+}
+body {
+    height:100%;
+    width: 100%;
+    margin: 0;
+}
+@media only screen and (min-width: 1024px) {
+    
+    #app-view{
+        width: 80%;     
+    }
+    /* html {
+        width:80%;
+    }
+    body {
+        width:80%;
+    }
+    .page-control{
+        width: 80%;
+    } */
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    #app-view{
+        width: 90%;
+    }
+    /* html {
+        width:90%;
+    }
+    body {
+        width:90%;
+    }
+    .page-control{
+        width: 90%;
+    } */
+    
+}
+@media only screen and (max-width: 767px) {
+    
+    #app-view{
+        width: 100%;    
+    }
+    /* html {
+        width:100%;
+    }
+    body {
+        width:100%;
+    }
+    .page-control{
+        width: 100%;
+    }  */
+    
+}
+#app-view{
+    margin-right: 0;
+}
+#app-menu {
+    background-color: #1d6c99;
+    display: flex;
+    padding-left: 0%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    list-style-type: none;
+    
+    height: 10%;
+    min-height:max-content;
+    align-items:center;
+} 
+#app-menu > li {
+    /* background-color: #00fe08; */
+    flex: auto;
+    text-align: center;
+    
+} 
+li.menu-item:hover{
+    background-color: rgb(177, 219, 248);
+}
+li.menu-item:hover a{
+    color: rgb(255, 239, 134);
+}
+li.menu-item > a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-left: 1%;
+    
+    
+}
+li.menu-item > img {
+    vertical-align: middle;
+    max-width: 35px;
+}
+
+
+#page-view {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.room-list{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-left: 0%;
+    margin-top: 0%;
+    width: 100%;
+    list-style-type: none;
+    background-color: rgba(240, 240, 240, 0.841);
+}
+.room-list > li:hover{
+    background-color: rgba(204, 229, 255, 0.841);
+}
+.room-list > li {
+    /* background-color: #00fe08; */
+    display: flex;
+    align-items:center;
+
+    border-bottom: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #5893b543;
+    flex: auto;
+    text-align:left;
+    
+} 
+.room-list > li > img {
+    max-width: 50px;
+    object-fit:cover;
+    border-radius:50%;
+
+    padding: 1%;
+}
+
+.room-list > li > a {
+    color:#1d6c99;
+    text-decoration: none;
+    
+}
+
+.page-control{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    height: 12%;
+    width: 100%;
+    min-height:max-content;
+    align-items:center;
+    justify-content: center;
+    background-color: #1d6c99;
+}
+.page-control>button{
+    /* height: 100%; */
+    font-size: large;
+    border-radius:0%;
+    background-color: white;
+}
+
+.room-name{
+    margin: 0%;
+    padding: 0.5%;
+
+    border-bottom: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #5893b543;
+}
+.message-list{
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;
+    /* max-height: 350px; */
+
+}
+.message{
+    overflow-y:auto;
+    display: flex;
+    flex-direction: column;
+
+    float: left;
+    /*padding: 1%;
+     width: 80%; */
+    margin-right: 15%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    border: 1px solid darkgray;
+    border-radius: 8px;
+    background-color: #1d6c99;
+    
+}
+.message>span{
+    background-color: rgba(240, 240, 240, 0.841);
+    padding-left: 1%; 
+}
+.my-message{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+
+    /*padding: 1%;
+     width: 80%; */
+    
+    margin-left: 15%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    
+    border: 1px solid darkgray;
+    border-radius: 8px;
+    background-color: #1d6c99;
+    
+}
+.my-message>span{
+    /* background-color: #1d6c99; */
+    padding-left: 1%; 
+    color: white;
+}
+
+.profile-form{
+    display: flex;
+    flex-direction: column;
+}
+.form-field{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    align-items:center;
+
+    padding: 2%;
+    border-bottom: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #5893b543;
+}
+.profile-form > input{
+    justify-content: center;
+}
